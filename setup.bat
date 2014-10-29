@@ -67,6 +67,11 @@ set STOP_OE=%CD%\runtime\stop_oe.bat
 echo call %CD%\env.bat >>%STOP_OE%
 ECHO pv.exe -f -k python-oe.exe -q >>%STOP_OE%
 
+:restart_oe
+set RESTART_OE=%CD%\runtime\restart_oe.bat
+echo call stop_oe.bat >>%RESTART_OE%
+echo call start_oe.bat >> %RESTART_OE%
+
 :start
 set START=%CD%\runtime\start.bat
 echo call start_pg.bat >>%START%

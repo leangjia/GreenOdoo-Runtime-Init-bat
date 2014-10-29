@@ -1,5 +1,5 @@
 @echo off
-title GreenOdoo - www.GreenOpenERP.com
+title Odoo Server - %CD%
 COLOR 0A
 set RUNTIME_DIR=E:\github\GreenOdoo-Runtime
 set OE_SRC_DIR=E:\github\odoo
